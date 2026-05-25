@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>citas</title>
+    <style>
+        /* Estilos base (Manteniendo tu diseño original) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo { font-size: 2.5em; font-weight: bold; }
+
+        nav { background-color: #000000; position: sticky; top: 0; }
+        nav ul {
+            list-style: none; padding: 0; margin: 0;
+            display: flex; justify-content: center;
+        }
+        nav ul li a { color: white; text-decoration: none; padding: 15px 20px; display: block; }
+        nav ul li a:hover { background-color: #000000; }
+
+        .container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        
+               .table-wrapper { overflow-x: auto; margin-top: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; background-color: white; min-width: 1100px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; font-size: 0.85em; }
+        th { background-color: #000000; color: white; }
+        tr:nth-child(even) { background-color: #ffffff; }
+
+        /* Footer */
+        footer { background-color: #000000; text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Citas</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio1.html">Inicio</a></li>
+            <li><a href="veterinarios1.0.html">Veterinarios</a></li>
+            <li><a href="propietarios1.0.html">Propietarios</a></li>
+            <li><a href="mascotas1.html">mascotas registradas</a></li>
+            <li><a href="citas1.html">citas solicitadas</a></li>
+            <li><a href="facturacion1.1.html">facturacion</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Citas programadas</h2>
+        
+        <div class="table-wrapper">
+            <table id="miTabla">
+                <thead>
+                    <tr id="encabezado">
+                        </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID_ctia</th>
+                        <th>Fecha_cita</th>
+                        <th>Hora_cita</th>
+                        <th>Motivo</th>
+                        <th>Estado</th>
+                        <th>Tipo_cliente</th>
+                        <th>ID_cliente</th>
+                        <th>Nombre_cliente</th>
+                        <th>Telefono_cliente</th>
+                        <th>Nombre_mascota</th>
+                        <th>Especie</th>
+                        <th>Fecha_registro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>c11</td>
+                        <td>26-02-20</td>
+                        <td>9:00</td>
+                        <td>vacunacion anual</td>
+                        <td>confirmado</td>
+                        <td>registrado</td>
+                        <td>p11</td>
+                        <td>jorge sanches</td>
+                        <td>656-525-5-337</td>
+                        <td>honie</td>
+                        <td>gato</td>
+                        <td>26-02-18(8:30)</td>
+                    </tr>
+                    <tr>
+                        <td>c12</td>
+                        <td>26-02-20</td>
+                        <td>9:50</td>
+                        <td>revicion general</td>
+                        <td>pendiente</td>
+                        <td>nuevo</td>
+                        <td></td>
+                        <td>ana torres</td>
+                        <td>551-111-2-223</td>
+                        <td>rocky</td>
+                        <td>perro</td>
+                        <td>26-02-18(8:45)</td>
+                    </tr>
+                    <tr>
+                        <td>c14</td>
+                        <td>26-02-21</td>
+                        <td>9:30</td>
+                        <td>corte de pelo</td>
+                        <td>confirmada</td>
+                        <td>nuevo</td>
+                        <td></td>
+                        <td>luis herrera</td>
+                        <td>552-345-6-789</td>
+                        <td>misha</td>
+                        <td>gato</td>
+                        <td>26-02-18(9:15)</td>
+                    </tr>
+                    <tr>
+                        <td>c15</td>
+                        <td>26-02-21</td>
+                        <td>11:00</td>
+                        <td>esterilizacion</td>
+                        <td>pendiente</td>
+                        <td>registrado</td>
+                        <td>p22</td>
+                        <td>miguel hernandes</td>
+                        <td>656-774-5-999</td>
+                        <td>mishi</td>
+                        <td>gato</td>
+                        <td>26-02-18(9:40)</td>
+                    </tr>
+                    <tr>
+                        <td>c16</td>
+                        <td>25-02-06</td>
+                        <td>13:30</td>
+                        <td>limpieza dental</td>
+                        <td>confirmado</td>
+                        <td>registrado</td>
+                        <td>p55</td>
+                        <td>carlos vasquez</td>
+                        <td>614-987-6-681</td>
+                        <td>nico</td>
+                        <td>perro</td>
+                        <td>26-02-18(10:00)</td>
+                    </tr>
+                    <tr>
+                        <td>c17</td>
+                        <td>26-02-22</td>
+                        <td>10:00</td>
+                        <td>revision de heridas</td>
+                        <td>pendiente</td>
+                        <td>nuevo</td>
+                        <td></td>
+                        <td>sofia martinez</td>
+                        <td>553-456-7-890</td>
+                        <td>toby</td>
+                        <td>perro</td>
+                        <td>26-02-18(10:25)</td>
+                    </tr>
+                    <tr>
+                        <td>c18</td>
+                        <td>26-02-22</td>
+                        <td>12:30</td>
+                        <td>corte de uñas</td>
+                        <td>atendida</td>
+                        <td>registrado</td>
+                        <td>p33</td>
+                        <td>juan ortiz</td>
+                        <td>825-398-4-532</td>
+                        <td>elias</td>
+                        <td>perro</td>
+                        <td>26-02-18(10:50)</td>
+                    </tr>
+                    <tr>
+                        <td>c19</td>
+                        <td>26-02-23</td>
+                        <td>9:15</td>
+                        <td>vacuna antirravia</td>
+                        <td>confirmada</td>
+                        <td>nuevo</td>
+                        <td></td>
+                        <td>pedro ramirez</td>
+                        <td>554-567-8-910</td>
+                        <td>luna</td>
+                        <td>gato</td>
+                        <td>26-02-18(11:30)</td>
+                    </tr>
+                    <tr>
+                        <td>c20</td>
+                        <td>26-02-23</td>
+                        <td>16:00</td>
+                        <td>consulta por alerjias</td>
+                        <td>pendiente</td>
+                        <td>registrado</td>
+                        <td>p6</td>
+                        <td>sandra leticia</td>
+                        <td>656-946-8-093</td>
+                        <td>silverio</td>
+                        <td>perro</td>
+                        <td>26-20-18(11:30)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>DATOS DEL ALUMNO</strong></p>
+        <p>Nombre:Angel Eduardo Zamudio Vega</p>
+        <p>Correo:a.24308051280679@cbtis128.edu.mx</p>
+        <p>Semestre:4to Semestre  Grupo:I</p>
+        <p>Especialidad:Programación</p>
+        <p>Institucion:Centro de Bachillerato Tecnologico Industrial y de Servicios No128</p>.
+
+    </footer>
+
+</body>
+</html>

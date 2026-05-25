@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas regisradas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo { font-size: 2.5em; font-weight: bold; }
+
+        nav { background-color: #000000; position: sticky; top: 0; }
+        nav ul {
+            list-style: none; padding: 0; margin: 0;
+            display: flex; justify-content: center;
+        }
+        nav ul li a { color: white; text-decoration: none; padding: 15px 20px; display: block; }
+        nav ul li a:hover { background-color: #000000; }
+
+        .container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        
+               .table-wrapper { overflow-x: auto; margin-top: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; background-color: white; min-width: 1100px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; font-size: 0.85em; }
+        th { background-color: #000000; color: white; }
+        tr:nth-child(even) { background-color: #ffffff; }
+
+        /* Footer */
+        footer { background-color: #000000; text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin-top: 40px; }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Mascotas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio1.html">Inicio</a></li>
+            <li><a href="veterinarios1.0.html">Veterinarios</a></li>
+            <li><a href="propietarios1.0.html">Propietarios</a></li>
+            <li><a href="mascotas1.html">mascotas registradas</a></li>
+            <li><a href="citas1.html">citas solicitadas</a></li>
+            <li><a href="facturacion1.1.html">facturacion</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 style="border-left: 5px solid #1abc9c; padding-left: 10px;">Mascotas registradas</h2>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th> id_mascota</th>
+                        <th> nombre</th>
+                        <th> especie</th>
+                        <th> raza</th>
+                        <th> sexo</th>
+                        <th> peso</th>
+                        <th> fecha_nacimiento</th>
+                        <th> edad</th>
+                        <th> numero_microchip</th>
+                        <th> alergias</th>
+                        <th> padecimientos</th>
+                        <th> cartilla_vacunas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   	<tr><td>m1</td>
+                   	<td>spanky</td>
+                   	<td>caballo</td>
+                   	<td>frizon</td>
+                   	<td>m</td>
+                    	<td>968kg</td>
+                    	<td>19-06-15</td>
+                   	<td>5a</td>
+                   	<td>1001</td>
+                   	<td>no</td>
+                    	<td>displacia de cadera</td>
+                    	<td>parvovirus</td></tr>
+
+                    <tr><td>m2</td>
+			<td>luna</td>
+			<td>gato</td>
+			<td>siames</td>
+			<td>h</td>
+			<td>4.2kg</td>
+			<td>21-09-20</td>
+			<td>3a</td>
+			<td>1002</td>
+			<td>polvo</td>
+			<td>ninguno</td>
+			<td>triple felina</td></tr>
+
+                    <tr><td>m3</td>
+			<td>brian</td>
+			<td>perro</td>
+			<td>pastor aleman</td>
+			<td>m</td>
+			<td>30kg</td>
+			<td>20-04-10</td>
+			<td>4a</td>
+			<td>1003</td>
+			<td>pollo</td>
+			<td>gastritis frecuente</td>
+			<td>rabia</td></tr>
+
+                    <tr><td>m4</td>
+			<td>nala</td>
+			<td>gato</td>
+			<td>persa</td>
+			<td>h</td>
+			<td>3.8kg</td>
+			<td>22-11-05</td>
+			<td>2a</td>
+			<td>1004</td>
+			<td>no</td>
+			<td>problemas respiratorios</td>
+			<td>parvovirus</td></tr>
+
+                    <tr><td>m6</td>
+			<td>kiara</td>
+			<td>perro</td>
+			<td>husky</td>
+			<td>h</td>
+			<td>22kg</td>
+			<td>21-07-25</td>
+			<td>3a</td>
+			<td>1006</td>
+			<td>pulgas</td>
+			<td>dermatitis</td>
+			<td>moquillo</td></tr>
+
+                    <tr><td>m7</td>
+			<td>simba</td>
+			<td>gato</td>
+			<td>criollo</td>
+			<td>m</td>
+			<td>5.1kg</td>
+			<td>20-01-30</td>
+			<td>4a</td>
+			<td>1007</td>
+			<td>no</td>
+			<td>ninguno</td>
+			<td>refuerzo</td></tr>
+
+                    <tr><td>m8</td>
+			<td>coco</td>
+			<td>perro</td>
+			<td>pudle</td>
+			<td>h</td>
+			<td>6.3kg</td>
+			<td>17-12-12</td>
+			<td>7a</td>
+			<td>1007</td>
+			<td>penicilina</td>
+			<td>diabetes</td>
+			<td>rabia</td></tr>
+
+                    <tr><td>m9</td>
+			<td>thor</td>
+			<td>perro</td>
+			<td>rottweiler</td>
+			<td>m</td>
+			<td>35kg</td>
+			<td>17-08-22</td>
+			<td>7a</td>
+			<td>1009</td>
+			<td>carne de res</td>
+			<td>problemas articulares</td>
+			<td>rabia</td></tr>
+
+                    <tr><td>m10</td>
+			<td>mia</td>
+			<td>gato</td>
+			<td>bengali</td>
+			<td>h</td>
+			<td>4.5kg</td>
+			<td>22-05-14</td>
+			<td>2a</td>
+			<td>1010</td>
+			<td>polen</td>
+			<td>ninguno</td>
+			<td>triple felina</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+     <footer>
+        <p><strong>DATOS DEL ALUMNO</strong></p>
+        <p>Nombre:Angel Eduardo Zamudio Vega</p>
+        <p>Correo:a.24308051280679@cbtis128.edu.mx</p>
+        <p>Semestre:4to Semestre  Grupo:I</p>
+        <p>Especialidad:Programación</p>
+        <p>Institucion:Centro de Bachillerato Tecnologico Industrial y de Servicios No128</p>.
+
+    </footer>
+
+
+</body>
+</html>

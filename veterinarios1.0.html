@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinarios</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo { font-size: 2.5em; font-weight: bold; }
+
+        nav { background-color: #000000; position: sticky; top: 0; }
+        nav ul {
+            list-style: none; padding: 0; margin: 0;
+            display: flex; justify-content: center;
+        }
+        nav ul li a { color: white; text-decoration: none; padding: 15px 20px; display: block; }
+        nav ul li a:hover { background-color: #000000; }
+
+        .container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        
+               .table-wrapper { overflow-x: auto; margin-top: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; background-color: white; min-width: 1100px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; font-size: 0.85em; }
+        th { background-color: #000000; color: white; }
+        tr:nth-child(even) { background-color: #ffffff; }
+
+        footer { background-color: #000000; text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin-top: 40px; }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">Veterinarios</div>
+    </header>
+   
+
+    <nav>
+       <ul>
+            <li><a href="inicio1.html">Inicio</a></li>
+            <li><a href="veterinarios1.0.html">Veterinarios</a></li>
+            <li><a href="Propietarios1.0.html">Propietarios</a></li>
+            <li><a href="mascotas1.html">mascotas registradas</a></li>
+            <li><a href="citas1.html">citas solicitadas</a></li>
+            <li><a href="facturacion1.1.html">facturacion</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 style="border-left: 5px solid #1abc9c; padding-left: 10px;">Propietarios</h2>
+        
+        <div class="table-container">
+            <table>
+                <tbody>
+                   <thead>
+                    <tr>
+                        <th> id_veterinario</th>
+                        <th> nombre</th>
+                        <th> especialidad</th>
+                        <th> cedula_profecional</th>
+                        <th> telefono</th>
+                        <th> correo</th>
+                        <th> horario</th>
+                        <th> consultorio</th>
+                        <th> rfc</th>
+                        <th> domicilio</th>
+                              
+                    </tr>
+                </thead>
+                <tbody>
+                   	<td>v1</td>
+                   	<td>dr.lopez</td>
+                   	<td>cirujia veterinaria</td>
+                   	<td>8456123</td>
+                   	<td>614-111-2-233</td>
+                    	<td>lopez@gmail.com</td>
+                    	<td>L a V, 8:00-16:00</td>
+                   	<td>2</td>
+                   	<td>pegj850520-ab1</td>
+                    	<td>salvador mercado1602</td></tr>
+
+                    <tr>
+			<td>v2</td>
+			<td>dra.sanchez</td>
+			<td>dermatologia veterinaria</td>
+			<td>9123456</td>
+			<td>614-223-5-444</td>
+			<td>sanches@gmail.com</td>
+			<td>L a V, 9:00-17:00</td>
+			<td>3</td>
+			<td>losm921015-xx4</td>
+			<td>felix merino 6644</td></tr>
+
+                    <tr><td>v3</td>
+			<td>dr.perez</td>
+			<td>anesteciologa</td>
+			<td>8734651</td>
+			<td>614-334-4-555</td>
+			<td>perez@gmail.com</td>
+			<td>L a S, 10:00-18:00</td>
+			<td>1</td>
+			<td>dolr780312-gt5</td>
+			<td>gomes morin 8912</td></tr>
+
+                    <tr><td>v5</td>
+			<td>dr.herrera</td>
+			<td>cardiologia</td>
+			<td>94947655</td>
+			<td>614-555-6-677</td>
+			<td>herrera@gmail.com</td>
+			<td>L,MI,V, 11:00-19:00</td>
+			<td>5</td>
+			<td>sihc540128-px3</td>
+			<td>independencia 4401</td></tr>
+
+                    <tr><td>v6</td>
+			<td>dr.torres</td>
+			<td>medicina preventiva</td>
+			<td>9567812</td>
+			<td>614-666-7-788</td>
+			<td>torres@gmail.com</td>
+			<td>L a V, 7:00-15:00</td>
+			<td>6</td>
+			<td>tav150610-k22</td>
+			<td>heneken 1217</td></tr>
+
+                    <tr><td>v7</td>
+			<td>dr.jeremi</td>
+			<td>nutricion animal</td>
+			<td>8899123</td>
+			<td>614-888-7-799</td>
+			<td>castr@gmail.com</td>
+			<td>L a S, 12:00-20:00</td>
+			<td>7</td>
+			<td>cin210201-mm9</td>
+			<td>mora 11981</td></tr>
+
+                    <tr><td>v8</td>
+			<td>dra.vega</td>
+			<td>odontolojia veterinaria</td>
+			<td>9012345</td>
+			<td>614-888-9-900</td>
+			<td>vega@gmail.com</td>
+			<td>M a D, 9:00-15:00</td>
+			<td>9</td>
+			<td>atr981125</td>
+			<td>porvenir13505</td></tr>
+
+                    <tr><td>v9</td>
+			<td>dr.molina</td>
+			<td>enesteciologo veterinario</td>
+			<td>8234567</td>
+			<td>614-999-0-011</td>
+			<td>molina@gmail.com</td>
+			<td>L a V, 14:00-22:00</td>
+			<td>9</td>
+			<td>ino050814-d45</td>
+			<td>sanders 20581</td></tr>
+
+                    <tr><td>v10</td>
+			<td>dra.flores</td>
+			<td>medicina general</td>
+			<td>9783456</td>
+			<td>614-000-1-122</td>
+			<td>flores@gmail.com</td>
+			<td>S a D, 8:00-16:00</td>
+			<td>10</td>
+			<td>ler121212-s10</td>
+			<td>riveras etapa 9</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>DATOS DEL ALUMNO</strong></p>
+        <p>Nombre:Angel Eduardo Zamudio Vega</p>
+        <p>Correo:a.24308051280679@cbtis128.edu.mx</p>
+        <p>Semestre:4to Semestre  Grupo:I</p>
+        <p>Especialidad:Programación</p>
+        <p>Institucion:Centro de Bachillerato Tecnologico Industrial y de Servicios No128</p>
+    </footer>
+
+</body>
+</html>
